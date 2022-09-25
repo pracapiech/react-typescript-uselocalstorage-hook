@@ -8,9 +8,9 @@ export function App() {
 
   return (
     <Wrapper>
+      <Button onClick={() => setCounter((prev) => prev + 1)}>&#43;</Button>
       <Couter>{count}</Couter>
-      <Button onClick={() => setCounter((prev) => prev + 1)}>+</Button>
-      <Button onClick={() => setCounter((prev) => prev + -1)}>-</Button>
+      <Button onClick={() => setCounter((prev) => prev - 1)}>&#8209;</Button>
     </Wrapper>
   );
 }
